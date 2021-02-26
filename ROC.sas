@@ -1,4 +1,14 @@
-%macro roc (dt=, var = , y=, cov=,event='1', format=, output_roc=a, output_auc=auc, result=result, plot=1, outfile=);
+%macro roc (dt=, 
+	    var = , 
+	    y=, 
+	    cov=, 
+	    event='1', 
+	    format=, 
+	    output_roc=a, 
+	    output_auc=auc, 
+	    result=result, 
+	    plot=1, 
+	    outfile=);
 %let n=%sysfunc(countw(&var));
 data &output_auc;
 	stop;
